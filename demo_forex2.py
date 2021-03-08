@@ -54,7 +54,7 @@ def GetCurrencyList():
 
 while True:
       currencyList = GetCurrencyList()
-      for i in range(iteration/len(currencyList)):
+      for i in range(int(iteration/len(currencyList))):
           for item in currencyList:
               PrintScreen(item)
               time.sleep(sleepSecond)
